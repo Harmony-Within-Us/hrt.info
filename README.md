@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HRT.info
 
-## Getting Started
+HRT.info is a platform dedicated to providing comprehensive information and resources about Hormone Replacement Therapy (HRT) for transgender individuals. Whether you have access to medical supplies through a doctor's prescription or are exploring alternative options, our goal is to offer valuable insights and guidance.
 
-First, run the development server:
+## Purpose
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Accessible Information:** We aim to make information about Hormone Replacement Therapy easily accessible to individuals seeking to understand the process and its various aspects.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Medical and DIY Resources:** Whether you have access to medical resources through a healthcare professional or are exploring do-it-yourself (DIY) methods, HRT.info strives to provide resources and guidance for all.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Informed Decision-Making:** Making informed decisions about Hormone Replacement Therapy is crucial. HRT.info is here to support individuals in their journey by providing accurate and up-to-date information.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing
 
-## Learn More
+Contributions to HRT.info are welcome! If you have information, resources, or updates that can benefit the community, please read our [Contribution Guidelines](CONTRIBUTING.md) before submitting a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+If you are not familiar with editing or coding, you can also open an issue on the [GitHub Issues](https://github.com/harmony-within-us/hrt.info/issues) page to report any suggestions or concerns.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Disclaimer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The information provided on HRT.info is for informational purposes only. While we aim to provide accurate and helpful information, we are not a substitute for professional medical advice.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [CC-BY-SA-4.0 License](LICENSE).
