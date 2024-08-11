@@ -17,7 +17,6 @@ const fontBody = Inter({
 
 export const metadata: Metadata = {
 	title: 'HRT.info',
-	description: " HRT.info is a platform dedicated to providing comprehensive information and resources about Hormone Replacement Therapy (HRT) for transgender individuals. Whether you have access to medical supplies through a doctor's prescription or are exploring alternative options, our goal is to offer valuable insights and guidance. ",
 }
 
 export default function RootLayout({
