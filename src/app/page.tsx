@@ -97,7 +97,7 @@ export default function Page() {
 								<TooltipTrigger>
 									<Button asChild className='button-secondary'>
 										<Link href='https://wiki.sumianvoice.com/'>
-											V.R.R. Wiki
+											V.R.R.
 										</Link>
 									</Button>
 								</TooltipTrigger>
