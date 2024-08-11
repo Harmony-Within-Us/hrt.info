@@ -1,26 +1,54 @@
 {
-  "name": "hrtinfolandingpage",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
-  }
+	"name": "hrtinfolandingpage",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"lint:fix": "next lint --fix",
+		"prettier": "prettier --check --ignore-path .gitignore ./",
+		"prettier:fix": "prettier --write --ignore-path .gitignore ./",
+		"vercel:preview": "vercel",
+		"vercel:deploy": "vercel --prod",
+		"prepare": "simple-git-hooks"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged"
+	},
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "^1.1.0",
+		"@radix-ui/react-tooltip": "^1.1.2",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.427.0",
+		"next": "14.2.5",
+		"react": "^18",
+		"react-dom": "^18",
+		"tailwind-merge": "^2.5.0",
+		"tailwindcss-animate": "^1.0.7"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"@typescript-eslint/eslint-plugin": "^8.0.1",
+		"eslint": "^8.57.0",
+		"eslint-config-next": "14.2.5",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-unused-imports": "^4.1.3",
+		"lint-staged": "^15.2.8",
+		"postcss": "^8",
+		"prettier-plugin-tailwindcss": "^0.6.6",
+		"simple-git-hooks": "^2.11.1",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5"
+	}
 }

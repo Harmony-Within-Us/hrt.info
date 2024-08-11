@@ -1,113 +1,183 @@
-import Image from "next/image";
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger
+} from '@/components/ui/tooltip'
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+export default function Page() {
+	return (
+		<div className='page-container'>
+			<div className='page-content-wrapper'>
+				<div className='page-content-overlay' />
+				<div className='page-content'>
+					<h1 className='page-title'>HRT.info</h1>
+					<TooltipProvider>
+						<Tooltip>
+							<p className='page-text'>
+								HRT.info has transitioned from its previous format due to time
+								constraints, but it now serves as a central hub for all your{' '}
+								<TooltipTrigger>HRT</TooltipTrigger> needs. While the original
+								site has been discontinued, you can still access it through
+								provided buttons. Explore our curated collection of guides,
+								tools, and community resources to navigate your journey. If you
+								wish to take over this domain, please contact us.
+							</p>
+							<TooltipContent>
+								<p>Hormone Replacement Therapy</p>
+							</TooltipContent>
+						</Tooltip>
+					</TooltipProvider>
+					<div className='button-group'>
+						<Button asChild className='button-primary'>
+							<Link href='https://github.com/harmony-within-us'>GitHub</Link>
+						</Button>
+						<div className='flex flex-row items-center gap-4'>
+							<Button asChild className='button-secondary'>
+								<Link href='https://discord.gg/mgtbUuy79m'>Get in touch</Link>
+							</Button>
+							<Button asChild className='button-secondary'>
+								<Link href='https://old.hrt.info/'>Visit Old Site</Link>
+							</Button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className='page-content-wrapper'>
+				<div className='page-content-overlay' />
+				<div className='page-content'>
+					<h2 className='page-title'>Navigation</h2>
+					<div className='button-group'>
+						<TooltipProvider>
+							<Tooltip>
+								<TooltipTrigger>
+									<Button asChild className='button-secondary'>
+										<Link href='https://rentry.org/mtfg'>
+											Male to Female General
+										</Link>
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p>Rentry Guide from imageboards.</p>
+								</TooltipContent>
+							</Tooltip>
+							<Tooltip>
+								<TooltipTrigger>
+									<Button asChild className='button-secondary'>
+										<Link href='https://transfemscience.org/'>
+											Transfeminine Science
+										</Link>
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p>
+										Transfeminine Science is a resource for original
+										informational content on the subject of transfeminine
+										hormone therapy.
+									</p>
+								</TooltipContent>
+							</Tooltip>
+							<Tooltip>
+								<TooltipTrigger>
+									<Button asChild className='button-secondary'>
+										<Link href='https://trans.chat/'>Trans.Chat</Link>
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p>
+										TransChat is a transgender support group. We provide
+										information, and meeting places online for people to
+										communicate in a safe space.
+									</p>
+								</TooltipContent>
+							</Tooltip>
+							<Tooltip>
+								<TooltipTrigger>
+									<Button asChild className='button-secondary'>
+										<Link href='https://wiki.sumianvoice.com/'>
+											V.R.R. Wiki
+										</Link>
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p>Voice Resource Repository</p>
+								</TooltipContent>
+							</Tooltip>
+						</TooltipProvider>
+					</div>
+					<div className='button-group'>
+						<TooltipProvider>
+							<Tooltip>
+								<TooltipTrigger>
+									<Button asChild className='button-secondary'>
+										<Link href='https://actionfortranshealth.org.uk/resources/for-trans-people/'>
+											Action for Trans Health
+										</Link>
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p>
+										This page contains various resources from Action for Trans
+										Health and from around the web which may be useful for trans
+										people.
+									</p>
+								</TooltipContent>
+							</Tooltip>
+							<Tooltip>
+								<TooltipTrigger>
+									<Button asChild className='button-secondary'>
+										<Link href='https://2345.lgbt/en/'>2345.LGBT</Link>
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p>Transgender Navigation</p>
+								</TooltipContent>
+							</Tooltip>
+							<Tooltip>
+								<TooltipTrigger>
+									<Button asChild className='button-secondary'>
+										<Link href='https://uniguide.oau.edu.kg/'>
+											Trans University Guidance
+										</Link>
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p>
+										Currently, our primary focus is on academic higher
+										education, but we are also making efforts to supplement
+										information on vocational-oriented higher education.
+									</p>
+								</TooltipContent>
+							</Tooltip>
+							<Tooltip>
+								<TooltipTrigger>
+									<Button asChild className='button-secondary'>
+										<Link href='https://genderanalysis.net/'>
+											Gender Analysis
+										</Link>
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>
+									<p>
+										Gender Analysis is a web series launched in 2014 exploring
+										transgender science and life experiences in depth, and
+										revealing the many insights to be found at their
+										intersection.
+									</p>
+								</TooltipContent>
+							</Tooltip>
+						</TooltipProvider>
+					</div>
+				</div>
+			</div>
+			<div className='page-footer'>
+				&copy;{' '}
+				<Link href='https://github.com/harmony-within-us'>
+					2024 Harmony Within Us. All rights reserved.
+				</Link>
+			</div>
+		</div>
+	)
 }
