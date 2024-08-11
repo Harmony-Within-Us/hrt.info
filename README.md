@@ -10,12 +10,6 @@ HRT.info is a platform dedicated to providing comprehensive information and reso
 
 - **Informed Decision-Making:** Making informed decisions about Hormone Replacement Therapy is crucial. HRT.info is here to support individuals in their journey by providing accurate and up-to-date information.
 
-## Contributing
-
-Contributions to HRT.info are welcome! If you have information, resources, or updates that can benefit the community, please read our [Contribution Guidelines](CONTRIBUTING.md) before submitting a pull request.
-
-If you are not familiar with editing or coding, you can also open an issue on the [GitHub Issues](https://github.com/harmony-within-us/hrt.info/issues) page to report any suggestions or concerns.
-
 ## Disclaimer
 
 The information provided on HRT.info is for informational purposes only. While we aim to provide accurate and helpful information, we are not a substitute for professional medical advice.
